@@ -116,3 +116,26 @@ function entranGrtis(people){
 outPut(free);
 
 }
+==================================================
+Tarea terminar piedra, papel y tijeras con functions
+
+    
+    function isTied(player1, player2){
+        return player1 == player2;   
+    }
+    function rockWin(player1, player2){
+        var array = [player1, player2];
+        return arrayIncludes(array, "Tijeras") && arrayIncludes(array, "Piedra");
+    }
+    
+    function paperWin(player1, player2){
+        var array = [player1, player2];
+        return arrayIncludes(array, "Papel") && arrayIncludes(array, "Piedra");
+        
+    }
+    
+    function scissorsWin(player1, player2){
+        var array = [player1, player2];
+        return arrayIncludes(array, "Tijeras") && arrayIncludes(array, "Papel");
+        
+    }
